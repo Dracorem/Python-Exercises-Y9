@@ -53,14 +53,20 @@ while YesNo == 'N' or YesNo=="n":
 YesNo = "N"   
 
 print(f'{Astronaut2} helps {Astronaut1} into the moonbase airlock' )    
-print(f'{Astronaut2} closes the airlock door and pressurises the airlock')  
+print(f'{Astronaut2} closes and locks the airlock door. Then pressurises the airlock')  
 
 while YesNo == 'N' or YesNo=="n":
   YesNo = input(f'Does the flow indicator show air movement into the airlock Y/N: ')
   if YesNo == "N" or YesNo == "n":
     print('The airlock continues to pressurise.')
 
+
 YesNo = "N"   
+
+while YesNo == 'N' or YesNo=="n":
+  YesNo = input('Does the airlock pressurised light show green? Y/N: ')
+  if YesNo == "N" or YesNo == "n":
+    print('The airlock continues to pressurise.')
 
 print('The airlock is pressurised.' )    
 print(f'{Astronaut2} opens the inner airlock door and enters the moonbase with {Astronaut1}')
